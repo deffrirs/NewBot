@@ -663,9 +663,9 @@ menunya = `*Hallo Kak ${pushname} mau sewa bot?*
 
 
 *- Harga sewa -*
-➸ ࣪▸ˑ ִֶָ 🔰 1 minggu : 800p
-➸ ࣪▸ˑ ִֶָ 🔰 1 Bulan : 1k
-➸ ࣪▸ˑ ִֶָ 🔰 Permanen : 2,1k
+➸ ࣪▸ˑ ִֶָ 🔰 1 minggu : 3K
+➸ ࣪▸ˑ ִֶָ 🔰 1 Bulan : 5k
+➸ ࣪▸ˑ ִֶָ 🔰 Permanen : 15k
 
 ──────────── ·﻿ ﻿ ﻿· ﻿ ·﻿ ﻿ ﻿· ﻿
 
@@ -881,6 +881,20 @@ her = `*Hero Details ${body.slice(12)}*
 
 *Story* : ${res.background_story}`
 reply(her)
+break
+case 'script':
+case 'sc':
+gambar = fs.readFileSync('./image/logo.jpg')
+menunya = 
+`SUBSCRIBE DEFFBOTz ye
+Link:https://github.com/deffrirs/NewBot`
+
+teks =
+`*『 ${botname} 』*`
+but = [
+          { buttonId: `${prefix}menu`, buttonText: { displayText: 'ᴍᴇɴᴜ 😈' }, type: 1 }
+        ]
+        sendButLocation(from, menunya, teks, gambar, but)
 break
 
 //══════════[GAME MENU]════════════════════════════//
